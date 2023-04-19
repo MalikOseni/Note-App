@@ -1,0 +1,61 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to left, lightgreen, lightblue);
+    min-height: 100dvh;
+    font-family: monospace;
+}
+.header{
+    color: darkblue;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 35px;
+}
+.sub-txt{
+    text-align: center;
+    color: darkblue;
+    font-size: 16px;
+}
+.app{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 40px;
+    place-content: center;
+    padding: 50px;
+}
+.notes{
+    height: 200px;
+    padding: 17px;
+    resize: none;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .4);
+    border: none;
+    border-radius: 15px;
+    outline:none;
+    font-size: 18px;
+    color: darkblue;
+}
+.notes::placeholder{
+    color: grey;
+    opacity: 25%;
+}
+.notes:hover,.notes:focus{
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    transition: all 300ms ease;
+}
+.btn{
+    height: 200px;
+    border: none;
+    background: rgba(255, 255, 255, .4);
+    font-size: 70px;
+    font-weight: 700;
+    color: rgba(0,0,0,.4);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    border-radius: 15px;
+}
+.btn:hover{
+    background: rgba(255, 255, 255, .55);
+    cursor: pointer;
+    transition: all .3s ease;
+}
